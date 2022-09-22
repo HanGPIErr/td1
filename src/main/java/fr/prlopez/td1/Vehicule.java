@@ -1,14 +1,17 @@
 package fr.prlopez.td1;
 
-public class Vehicule {
+public abstract class Vehicule {
 
-    private int nombreDeRoue;
-    private String marque;
+    protected int nombreDeRoue;
+    protected String marque;
 
     public Vehicule(int nombreDeRoue, String marque) {
         this.nombreDeRoue = nombreDeRoue;
         this.marque = marque;
     }
+
+    public abstract String info();
+
 
 
     public int getNombreDeRoue() {
